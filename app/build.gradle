@@ -10,15 +10,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    signingConfigs {
-        release {
-            storeFile file("C:\\Users\\Ironman\\AndroidStudio\\Keystores\\medListKeyStore.jks")
-            storePassword "otto1895"
-            keyAlias "medListKey"
-            keyPassword "otto1895"
-            v2SigningEnabled false
-        }
-    }
+
     buildTypes {
         release {
             minifyEnabled false
