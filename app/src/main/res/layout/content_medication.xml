@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lsdinfotech.medicationlist.MedicationActivity"
+    tools:showIn="@layout/activity_medication">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/screen_margin">
+
+            <!-- Header with images -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/screen_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/med_image_text"
+                        android:text="@string/medication_medication_image"
+                        android:drawableEnd="@drawable/ic_menu_camera"
+                        android:drawableRight="@drawable/ic_menu_camera"
+                        android:paddingBottom="@dimen/image_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/med_image"
+                        android:clickable="true"
+                        android:layout_margin="@dimen/image_margin"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_contact_picture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/medication_medication_image" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/med_label_image_text"
+                        android:drawableEnd="@drawable/ic_menu_camera"
+                        android:drawableRight="@drawable/ic_menu_camera"
+                        android:paddingBottom="@dimen/image_margin"
+                        android:text="@string/medication_prescription_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:clickable="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/image_margin"
+                        android:id="@+id/med_prescription_label_image"
+                        android:src="@drawable/ic_contact_picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/medication_prescription_label" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!-- Medication name -->
+            <LinearLayout
+                android:id="@+id/med_name_enclose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+                <TextView
+                    android:text="@string/med_brand_name_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/med_brand_name_input"
+                    android:textSize="@dimen/edittext_textsize"
+                    android:textColor="@color/colorText"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/med_name_generic_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medication_name"/>
+
+                <EditText
+                    android:id="@+id/med_name_input"
+                    android:textSize="@dimen/edittext_textsize"
+                    android:textColor="@color/colorText"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Route -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/medication_route"
+                    android:padding="@dimen/textview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/med_route_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background= "@drawable/divider_line_2"/>
+
+            </LinearLayout>
+
+            <!-- form -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/medication_form"
+                    android:padding="@dimen/textview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/med_form_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background= "@drawable/divider_line_2"/>
+
+            </LinearLayout>
+
+            <!-- Strength -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/medication_strength"
+                    android:padding="@dimen/textview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/med_strength"
+                        android:padding="@dimen/textview_padding"
+                        android:textSize="@dimen/edittext_textsize"
+                        android:textColor="@color/colorText"
+                        android:layout_weight=".9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/med_strength_button"
+                        android:background="@drawable/ic_arrow_drop_down_black_24px"
+                        android:layout_marginLeft="@dimen/down_arrow_margin_left"
+                        android:layout_marginStart="@dimen/down_arrow_margin_left"
+                        android:layout_marginRight="@dimen/down_arrow_margin_right"
+                        android:layout_marginEnd="@dimen/down_arrow_margin_right"
+                        android:layout_weight=".1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="ContentDescription">
+
+                    </ImageButton>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background= "@drawable/divider_line_2"/>
+
+            </LinearLayout>
+
+            <!-- Take -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/med_take_inst_label"
+                    android:padding="@dimen/textview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/med_take_instructions"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/edittext_textsize"
+                    android:inputType="text"
+                    android:hint="@string/med_take_inst_hint"
+                    android:lines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- Mfg -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/med_mfg_label"
+                    android:padding="@dimen/textview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/med_mfg"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/edittext_textsize"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- Quantity -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/medication_quantity"
+                    android:padding="@dimen/textview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/med_qty"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/edittext_textsize"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Family member -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/medication_family_member"
+                    android:padding="@dimen/textview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/med_family_member_name"
+                        android:lines="1"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/edittext_textsize"
+                        android:layout_weight=".9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/med_family_member_button"
+                        android:background="@drawable/ic_arrow_drop_down_black_24px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/down_arrow_margin_left"
+                        android:layout_marginStart="@dimen/down_arrow_margin_left"
+                        android:layout_marginRight="@dimen/down_arrow_margin_right"
+                        android:layout_marginEnd="@dimen/down_arrow_margin_right"
+                        android:layout_weight=".1"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background= "@drawable/divider_line_2"/>
+
+            </LinearLayout>
+
+            <!-- Physician -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/medication_physician"
+                    android:padding="@dimen/textview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/med_dr_name"
+                        android:lines="1"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/edittext_textsize"
+                        android:layout_weight=".9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/med_physician_button"
+                        android:background="@drawable/ic_arrow_drop_down_black_24px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/down_arrow_margin_left"
+                        android:layout_marginStart="@dimen/down_arrow_margin_left"
+                        android:layout_marginRight="@dimen/down_arrow_margin_right"
+                        android:layout_marginEnd="@dimen/down_arrow_margin_right"
+                        android:layout_weight=".1"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background= "@drawable/divider_line_2"/>
+
+            </LinearLayout>
+
+            <!-- Pharmacy -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/medication_pharmacy"
+                    android:padding="@dimen/textview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/med_pharmacy"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/edittext_textsize"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- Script number -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/medication_prescription_number"
+                    android:padding="@dimen/textview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/med_script_num"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/edittext_textsize"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- Note -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/medication_note"
+                    android:padding="@dimen/textview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/med_notes"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/edittext_textsize"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background= "@drawable/divider_line_2"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>

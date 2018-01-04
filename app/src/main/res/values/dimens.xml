@@ -1,0 +1,32 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="textview_padding">3dp</dimen>
+    <dimen name="edittext_textsize">20sp</dimen>
+    <dimen name="label_size">14sp</dimen>
+    <dimen name="left_margin">10dp</dimen>
+    <dimen name="right_margin">10dp</dimen>
+    <dimen name="screen_margin">10dp</dimen>
+    <dimen name="screen_margin_16">16dp</dimen>
+    <dimen name="image_margin">5dp</dimen>
+    <dimen name="down_arrow_margin_left">10dp</dimen>
+    <dimen name="down_arrow_margin_right">10dp</dimen>
+    <dimen name="label_margin">10dp</dimen>
+    <dimen name="edittext_margin">10dp</dimen>
+    <dimen name="spinner_margin">10dp</dimen>
+    <dimen name="input_text_size">12sp</dimen>
+    <dimen name="name_title_margin">20dp</dimen>
+    <dimen name="name_title_textsize">20sp</dimen>
+    <dimen name="divider_height_listview">1dp</dimen>
+    <dimen name="list_text_size">16sp</dimen>
+    <dimen name="linear_layout_margin">0dp</dimen>
+    <dimen name="main_padding_left">20dp</dimen>
+    <dimen name="main_padding_top">20dp</dimen>
+    <dimen name="main_padding_right">20dp</dimen>
+    <dimen name="main_padding_start">0dp</dimen>
+    <dimen name="main_textsize_tv">24sp</dimen>
+    <dimen name="main_drawable_padding">20dp</dimen>
+    <dimen name="main_textview_height">70dp</dimen>
+    <dimen name="physician_list_specialty_size">15sp</dimen>
+    <dimen name="physician_list_name_margin">5dp</dimen>
+    <dimen name="spacer_20">20dp</dimen>
+</resources>

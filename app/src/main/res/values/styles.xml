@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorLsdDark</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:dropDownListViewStyle">@style/App.Style.Spinner</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="App.Style.Spinner" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:dividerHeight">2dp</item>
+        <item name="android:divider">@drawable/divider_line_2</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="content_main_selection_layout">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:paddingLeft">@dimen/main_padding_left</item>
+        <item name="android:paddingEnd">@dimen/main_padding_left</item>
+        <item name="android:paddingTop">@dimen/main_padding_top</item>
+        <item name="android:paddingRight">@dimen/main_padding_right</item>
+        <item name="android:paddingStart">@dimen/main_padding_start</item>
+        <item name="android:textSize">@dimen/main_textsize_tv</item>
+        <item name="android:drawablePadding">@dimen/main_drawable_padding</item>
+        <item name="android:layout_marginBottom">@dimen/screen_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/main_textview_height</item>
+    </style>
+
+    <style name="reminder_type">
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="down_arrow">
+        <item name="android:background">@drawable/ic_arrow_drop_down_black_24px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/down_arrow_margin_left</item>
+        <item name="android:layout_marginStart">@dimen/down_arrow_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/down_arrow_margin_right</item>
+        <item name="android:layout_marginEnd">@dimen/down_arrow_margin_right</item>
+        <item name="android:layout_weight">.1</item>
+
+    </style>
+
+</resources>

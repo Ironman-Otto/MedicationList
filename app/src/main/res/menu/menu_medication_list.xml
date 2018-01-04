@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lsdinfotech.medicationlist.MedicationListActivity">
+    <item
+        android:id="@+id/action_sort_by_family_member"
+        android:orderInCategory="100"
+        android:title="@string/action_sort_family"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sort_by_physician"
+        android:orderInCategory="101"
+        android:title="@string/action_sort_physician"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sort_all"
+        android:orderInCategory="102"
+        android:title="@string/action_sort_all"
+        app:showAsAction="never"/>
+
+</menu>

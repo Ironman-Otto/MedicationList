@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/screen_margin_16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Medication Generic name -->
+    <LinearLayout
+        android:layout_margin="@dimen/linear_layout_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/medication_list_generic"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:layout_marginRight="@dimen/screen_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/medication_list_detail_name"
+            android:text="@string/place_holder"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/list_text_size"
+            android:layout_marginLeft="@dimen/linear_layout_margin"
+            android:layout_marginStart="@dimen/linear_layout_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Brand name -->
+    <LinearLayout
+        android:layout_margin="@dimen/linear_layout_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/medication_list_brand"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:layout_marginRight="@dimen/screen_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/medication_list_detail_brand_name"
+            android:text="@string/place_holder"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/list_text_size"
+            android:layout_marginLeft="@dimen/linear_layout_margin"
+            android:layout_marginStart="@dimen/linear_layout_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Strength and quantity -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/linear_layout_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/medication_list_detail_strength"
+            android:layout_marginEnd="@dimen/label_margin"
+            android:layout_marginRight="@dimen/label_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/medication_list_detail_dosage"
+            android:text="@string/place_holder"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/list_text_size"
+            android:layout_marginRight="@dimen/right_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/medication_list_detail_qty"
+            android:layout_marginEnd="@dimen/label_margin"
+            android:layout_marginRight="@dimen/label_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/medication_list_detail_quantity"
+            android:text="@string/place_holder"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/list_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- Take instruction -->
+    <LinearLayout
+        android:layout_margin="@dimen/linear_layout_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/medication_list_detail_instr_label"
+            android:layout_marginRight="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/medication_list_detail_instruction"
+            android:textSize="@dimen/list_text_size"
+            android:textColor="@color/colorText"
+            android:text="@string/place_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- Family member -->
+    <LinearLayout
+        android:layout_margin="@dimen/linear_layout_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/medication_list_for"
+            android:layout_marginRight="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/medication_list_detail_family_member"
+            android:textSize="@dimen/list_text_size"
+            android:textColor="@color/colorText"
+            android:text="@string/place_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Physcian -->
+    <LinearLayout
+        android:layout_margin="@dimen/linear_layout_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/medication_list_from"
+            android:layout_marginRight="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/medication_list_detail_physician"
+            android:textSize="@dimen/list_text_size"
+            android:textColor="@color/colorText"
+            android:text="@string/place_holder"
+            android:layout_marginBottom="@dimen/screen_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

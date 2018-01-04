@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/screen_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lsdinfotech.medicationlist.ReminderActivity"
+    tools:showIn="@layout/activity_reminder">
+
+    <TextView
+        android:text="@string/reminder_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/reminder_name"
+        android:inputType="text"
+        android:textColor="@color/colorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Occourrence is -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/occurrence_is"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/reminder_occurrence"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@drawable/divider_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- time -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/time"
+            android:padding="@dimen/textview_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reminder_time"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:layout_weight=".9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="InefficientWeight" />
+
+            <ImageButton
+                android:id="@+id/reminder_time_btn"
+                style="@style/down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background= "@drawable/divider_line_2"/>
+
+    </LinearLayout>
+
+    <!-- Start Date -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/start_date"
+            android:padding="@dimen/textview_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reminder_start_date"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:layout_weight=".9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="InefficientWeight" />
+
+            <ImageButton
+                android:id="@+id/reminder_start_date_btn"
+                style="@style/down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background= "@drawable/divider_line_2"/>
+
+    </LinearLayout>
+
+    <!-- Days to Occur -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/reminder_days_to_occur_label"
+            android:text="@string/days_to_occur"
+            android:padding="@dimen/textview_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reminder_days_to_occur"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:layout_weight=".9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="InefficientWeight" />
+
+            <ImageButton
+                android:id="@+id/reminder_days_to_occur_btn"
+                style="@style/down_arrow"
+                tools:ignore="ContentDescription"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background= "@drawable/divider_line_2"/>
+
+    </LinearLayout>
+
+    <!-- Occurs every -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/occurs_every"
+            android:padding="@dimen/textview_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reminder_occurrence_interval"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:layout_weight=".9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="InefficientWeight" />
+
+            <ImageButton
+                android:id="@+id/reminder_occurrence_interval_btn"
+                style="@style/down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/divider_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- Number of occurrences -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/number_of_occurrences"
+            android:padding="@dimen/textview_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reminder_occurrence_count"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:layout_weight=".9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="InefficientWeight" />
+
+            <ImageButton
+                android:id="@+id/reminder_occurrence_count_btn"
+                style="@style/down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/divider_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- Until -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/reminder_until_date"
+            android:padding="@dimen/textview_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reminder_until"
+                android:textColor="@color/colorText"
+                android:textSize="16sp"
+                android:layout_weight=".9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="InefficientWeight" />
+
+            <ImageButton
+                android:id="@+id/reminder_until_btn"
+                style="@style/down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/divider_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">-->
+
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/reminder_type_list_grp"
+        android:layout_gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/reminder_type_daily"
+            android:text="@string/reminder_type_daily"
+            style="@style/reminder_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/reminder_type_weekly"
+            android:text="@string/reminder_type_weekly"
+            style="@style/reminder_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/reminder_type_monthly"
+            android:text="@string/reminder_type_monthly"
+            style="@style/reminder_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/reminder_type_yearly"
+            android:text="@string/reminder_type_yearly"
+            style="@style/reminder_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/reminder_type_specific_date"
+            android:text="@string/reminder_type_specific_date"
+            style="@style/reminder_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+<!--</LinearLayout>-->

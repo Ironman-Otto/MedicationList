@@ -1,0 +1,41 @@
+MEDICATION LIST
+
+Medication list has three option in upper right selections. Sort by family member, sort by physician, and sort all which lists all medications in the database. Sort all is the default setting for the medication list. To add a new medication press add button.
+
+MEDICATION
+
+The medication screen has a place for taking pictures of the medication and prescription bottle label. This is provided if it is desired to show this to physician. Press the label with the camera icon to take picture. Press the actual image to bring up close up.
+
+Press SAVE after required information has been input.
+
+PHYSICIAN LIST
+
+Pressing the phone icon on the physician in physician list will bring up dialog to call physician if a phone number is on file.
+
+PHYSICIAN
+
+After entering an email address for physician pressing the email text will bring up an email chooser.
+
+FAMILY MEMBER LIST
+
+This is a list of family member available in database. To add a new family member press add button. To edit an existing family member press on family member.
+
+FAMILY MEMBER
+
+This allow for recording basic information about a family member. Use SAVE button on action bar to add or update to database. Select delete from action bar to remove family member from database.
+
+REMINDER LIST
+
+This is a list of all current reminders. Reminders are all created in a separate medication calendar. This calendar is visible on the device's calendar app and can be hidden there if necessay. Note, hidden calendars will not issue reminders. To add a new reminder hit the plus button. A list of reminder types is displayed
+
+REMINDER
+
+Enter name, start date, start time. The occurence type is automatically populated. The following settings modify the reminder.
+
+Days to occur - if applicable allows the selection of days of the week for the reminder. This is applicable to weekly and monthly reminders.
+
+Repeats every - Sets the repeat interval. For example setting to 3 days for a daily reminder results in every 3rd day.
+
+Number of occurences - This is the total number of occurences. Default is indefinite. Setting to a value ends the repeating reminder after the specified number of events have occured. For example, setting daily reminders with number set to 7 will stop after 7 days.
+
+Until date - if specified will end repeating reminders at midnight of set date.

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/screen_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lsdinfotech.medicationlist.MedictionDosageActivity"
+    tools:showIn="@layout/activity_mediction_dosage">
+
+
+        <TextView
+            android:text="@string/medication_strength"
+            android:layout_margin="@dimen/label_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="@dimen/edittext_margin"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/edittext_textsize"
+            android:id="@+id/medication_dosage_strength" />
+
+        <TextView
+            android:layout_margin="@dimen/label_margin"
+            android:text="@string/medication_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_margin="@dimen/spinner_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/medication_dosage_unit" />
+
+        <TextView
+            android:layout_margin="@dimen/label_margin"
+            android:background="@drawable/divider_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+</LinearLayout>

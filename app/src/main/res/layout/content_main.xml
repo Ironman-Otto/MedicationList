@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lsdinfotech.medicationlist.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/side_nav_bar"
+        android:layout_margin="@dimen/screen_margin"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:text="@string/main_title"
+            android:textSize="24sp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/pills"
+            android:background="@drawable/rounded_border"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_margin="@dimen/screen_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Medication button -->
+            <TextView
+                android:id="@+id/main_medication_tv_btn"
+                android:text="@string/main_medication_tv"
+                android:drawableLeft="@drawable/ic_menu_medication"
+                android:drawableStart="@drawable/ic_menu_medication"
+                style="@style/content_main_selection_layout" />
+
+            <!-- Family Member button -->
+            <TextView
+                android:id="@+id/main_family_member_tv_btn"
+                android:text="@string/main_family_member_tv"
+                android:drawableLeft="@drawable/ic_group_black_24px"
+                android:drawableStart="@drawable/ic_group_black_24px"
+                style="@style/content_main_selection_layout" />
+
+            <!-- Physician button -->
+            <TextView
+                android:id="@+id/main_physician_tv_btn"
+                android:text="@string/main_physician_tv"
+                android:drawableLeft="@drawable/ic_menu_doctor"
+                android:drawableStart="@drawable/ic_menu_doctor"
+                style="@style/content_main_selection_layout" />
+
+            <!-- Reminders -->
+            <TextView
+                android:id="@+id/main_reminder_tv_btn"
+                android:text="@string/main_reminders"
+                android:drawableLeft="@drawable/ic_notifications_black_24px"
+                android:drawableStart="@drawable/ic_notifications_black_24px"
+                style="@style/content_main_selection_layout" />
+
+            <!-- Help -->
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/screen_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/main_contact"
+                    android:text="@string/contact_us"
+                    android:layout_marginEnd="@dimen/spacer_20"
+                    android:layout_marginRight="@dimen/spacer_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/main_help"
+                    android:text="@string/help_label"
+                    android:layout_marginStart="@dimen/spacer_20"
+                    android:layout_marginLeft="@dimen/spacer_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
